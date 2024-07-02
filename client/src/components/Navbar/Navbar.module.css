@@ -1,0 +1,27 @@
+.navbar {
+    height: 100px;
+    width: 1296px;
+    border-radius: 20px;
+    background-color: rgba(255, 165, 0, 0.2);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    /* margin-top: 32px; */
+
+}
+
+.text{
+    color: #F5E2C3;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38;
+    text-align: center;
+    opacity: 100%;
+}
+
+.logo{
+    margin-left: 76px;
+    margin-right: 39px;
+}
