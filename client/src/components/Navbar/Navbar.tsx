@@ -9,15 +9,15 @@ export default function Navbar() {
     return (
         <>
             <nav className={style.navbar}>
-                <span className={style.text}>О НАС</span> 
+                <a href='#about' className={style.text}>О НАС</a> 
                 <img className={style.point} src={bullet}/>
-                <span className={style.text}>КАТАЛОГ</span>
+                <a href='#catalog' className={style.text}>КАТАЛОГ</a>
                 <img className={style.point} src={bullet}/>
-                <span className={style.text}>ОТЗЫВЫ</span>
+                <a href='#review' className={style.text}>ОТЗЫВЫ</a>
                 <img className={style.logo} src={logo}/>
-                <span className={style.text}>ОПЛАТА И ДОСТАВКА</span>
+                <a href='#payment' className={style.text}>ОПЛАТА И ДОСТАВКА</a>
                 <img className={style.point} src={bullet}/>
-                <span className={style.text}>КОНТАКТЫ</span>
+                <a href='contacts' className={style.text}>КОНТАКТЫ</a>
 
                  
 
