@@ -92,7 +92,7 @@ export default function Slide2() {
               </div>
             </div>
           </div>
-          <a href='#catalog' type="button" className={styles.btnCatalog}>ПЕРЕЙТИ В КАТАЛОГ</a>
+          <button type="button" className={styles.btnCatalog}>ПЕРЕЙТИ В КАТАЛОГ</button>
         </div>
       </Wrapper>
     </>
