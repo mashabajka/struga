@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Slide3.module.css";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import img_block1_1 from "../../assets/Slide3/block1_1.png";
@@ -10,10 +9,9 @@ import logo2 from "../../assets/Slide3/logo2.png";
 import logo3 from "../../assets/Slide3/logo3.png";
 import logo4 from "../../assets/Slide3/logo4.png";
 import logo5 from "../../assets/Slide3/logo5.png";
-import avatar from "../../assets/Slide3/avatar.png";
-import star from "../../assets/Slide3/Star.png";
 import Review from "../../components/Review/Review";
 import { reviews } from "../../Reviews";
+import Button from "../../components/Button/Button";
 
 export default function Slide3() {
   return (
@@ -85,8 +83,7 @@ export default function Slide3() {
               ))}
               <img src={right} className={styles.right} />
             </div>
-            <button type="button" className={styles.btnReview}>ПЕРЕЙТИ В КАТАЛОГ</button>
-
+            <Button text="ОСТАВИТЬ ОТЗЫВ" />
           </div>
         </div>
       </Wrapper>

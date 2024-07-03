@@ -1,4 +1,3 @@
-import React from "react";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import styles from "./Slide2.module.css";
 import furniture from "../../assets/catalog/furniture.png";
@@ -8,6 +7,7 @@ import nuts from "../../assets/catalog/nuts.png";
 import clocks from "../../assets/catalog/clocks.png";
 import plates from "../../assets/catalog/plates.png";
 import special from "../../assets/catalog/special.png";
+import Button from "../../components/Button/Button";
 
 export default function Slide2() {
   return (
@@ -92,7 +92,7 @@ export default function Slide2() {
               </div>
             </div>
           </div>
-          <button type="button" className={styles.btnCatalog}>ПЕРЕЙТИ В КАТАЛОГ</button>
+          <Button type="black" text="ПЕРЕЙТИ В КАТАЛОГ" />
         </div>
       </Wrapper>
     </>

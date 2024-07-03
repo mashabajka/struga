@@ -1,10 +1,17 @@
-import React from "react";
 import styles from "./Slide1.module.css";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import Navbar from "../../components/Navbar/Navbar";
 import btnToVideo from "../../assets/images/btnYoutube.png";
+import Button from "../../components/Button/Button";
 
 export default function Slide1() {
+  const handleOnClick = () => {
+    const catalogAnchor = document.getElementById("catalog");
+    if (catalogAnchor) {
+      catalogAnchor.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className={styles.background}>
@@ -19,10 +26,13 @@ export default function Slide1() {
                 </div>
                 <div className={styles.underHeader}>
                   <span>Cтиль и уют деревянных аксессуаров</span>
-                  <span> в ваш дом, ресторан или
-                  кафе</span>
+                  <span> в ваш дом, ресторан или кафе</span>
                 </div>
-                <a href='#catalog' type="button" className={styles.btnCatalog}>ПЕРЕЙТИ В КАТАЛОГ</a>
+                <Button
+                  text="ПЕРЕЙТИ В КАТАЛОГ"
+                  onClick={handleOnClick}
+                  align="flex-start"
+                />
               </div>
               <div className={styles.second}>
                 <img className={styles.btnYoutube} src={btnToVideo} />

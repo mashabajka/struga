@@ -137,31 +137,15 @@
 .img_card_plates {
   width: 416px;
   border-radius: 20px;
-
 }
 
 .img_card_special {
   width: 856px;
   border-radius: 20px;
-
 }
 
 .plates_card,
 .special_card {
   position: relative;
   height: 300px;
-}
-
-.btnCatalog{
-    color: #171717;
-    border-color: #171717;
-    background-color: transparent;
-    height: 70px;
-    width: 300px;
-    border-radius: 20px;
-    border: 1px solid;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    align-self: center;
 }
