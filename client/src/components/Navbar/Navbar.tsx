@@ -13,7 +13,7 @@ export default function Navbar() {
                 <img className={style.point} src={bullet}/>
                 <a href='#catalog' className={style.text}>КАТАЛОГ</a>
                 <img className={style.point} src={bullet}/>
-                <a href='#review' className={style.text}>ОТЗЫВЫ</a>
+                <a href='#reviews' className={style.text}>ОТЗЫВЫ</a>
                 <img className={style.logo} src={logo}/>
                 <a href='#payment' className={style.text}>ОПЛАТА И ДОСТАВКА</a>
                 <img className={style.point} src={bullet}/>

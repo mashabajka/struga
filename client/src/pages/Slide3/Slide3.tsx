@@ -1,16 +1,28 @@
 import React from "react";
 import styles from "./Slide3.module.css";
 import Wrapper from "../../components/Wrapper/Wrapper";
-import img_block1_1 from '../../assets/Slide3/block1_1.png'
-import img_block1_2 from '../../assets/Slide3/block1_2.png'
-
+import img_block1_1 from "../../assets/Slide3/block1_1.png";
+import img_block1_2 from "../../assets/Slide3/block1_2.png";
+import left from "../../assets/Slide3/Left.png";
+import right from "../../assets/Slide3/Right.png";
+import logo1 from "../../assets/Slide3/logo1.png";
+import logo2 from "../../assets/Slide3/logo2.png";
+import logo3 from "../../assets/Slide3/logo3.png";
+import logo4 from "../../assets/Slide3/logo4.png";
+import logo5 from "../../assets/Slide3/logo5.png";
+import avatar from "../../assets/Slide3/avatar.png";
+import star from "../../assets/Slide3/Star.png";
+import Review from "../../components/Review/Review";
+import { reviews } from "../../Reviews";
 
 export default function Slide3() {
   return (
     <div className={styles.background}>
       <Wrapper>
         <div className={styles.mainDiv}>
-          <span className={styles.header}>О нашей мастерской</span>
+          <span className={styles.header} id="about">
+            О нашей мастерской
+          </span>
           <div className={styles.blockOne}>
             <div className={styles.text}>
               <p className={styles.description1}>
@@ -38,9 +50,43 @@ export default function Slide3() {
               </p>
             </div>
             <div className={styles.images}>
-                <img className={styles.img1} src={img_block1_1}/>
-                <img className={styles.img2} src={img_block1_2}/>
+              <img className={styles.img1} src={img_block1_1} />
+              <img className={styles.img2} src={img_block1_2} />
             </div>
+          </div>
+          <div className={styles.blockTwo}>
+            <span className={styles.header}>Наши клиенты</span>
+            <div className={styles.logos}>
+              <img src={left} className={styles.left} />
+              <img src={logo1} className={styles.logo1} />
+              <img src={logo2} className={styles.logo2} />
+              <img src={logo3} className={styles.logo3} />
+              <img src={logo4} className={styles.logo4} />
+              <img src={logo5} className={styles.logo5} />
+              <img src={right} className={styles.right} />
+            </div>
+          </div>
+          <div className={styles.blockThree}>
+            <span className={styles.header} id="reviews">
+              Отзывы
+            </span>
+            <div className={styles.reviews}>
+              <img src={left} className={styles.left} />
+
+              {reviews.map((review, i) => (
+                <Review
+                  key={i}
+                  stars={review.stars}
+                  text={review.text}
+                  name={review.name}
+                  position={review.position}
+                  avatar={review.avatar}
+                />
+              ))}
+              <img src={right} className={styles.right} />
+            </div>
+            <button type="button" className={styles.btnReview}>ПЕРЕЙТИ В КАТАЛОГ</button>
+
           </div>
         </div>
       </Wrapper>

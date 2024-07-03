@@ -4,8 +4,8 @@
   width: 1920px;
   min-width: 1250px;
   max-width: 100vw;
-  height: 818px;
-  max-height: 100vh;
+  height: 1508px;
+  /* max-height: 100vh; */
   min-height: 850px;
 }
 
@@ -74,4 +74,94 @@ margin-top: 43px;
   right: 15px; 
   transform: rotate(5deg);
   z-index: 1; 
+}
+
+.blockTwo{
+    display: flex;
+    flex-direction: column;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.left, .right{
+width: 48px;
+height: 48px;
+align-self: center;
+}
+
+.left{
+    margin-left: -75px;
+}
+
+.right{
+    margin-right: -75px;
+}
+
+.logo1{
+    height: 100px;
+    width: 167.87px;
+}
+
+.logo2{
+height: 100px;
+    width: 162.84px;
+}
+
+.logo3{
+    width: 136.16px;
+    height: 140px;
+}
+
+.logo4{
+    width: 241.57px;
+    height: 100px;
+}
+
+.logo5{
+    width: 233.39px;
+    height: 80px;
+}
+
+.blockThree{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 475px;
+}
+
+.reviews{
+    display: flex;
+    justify-content: space-between;
+    min-width: 1290px;
+}
+
+.btnReview{
+    color: #F5E2C3;
+    border-color: #F5E2C3;
+    background-color: transparent;
+    height: 70px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    align-self: center;
+}
+
+@media (max-width: 1450px) {
+    .left{
+        margin-left: -45px;
+    }
+
+    .right{
+        margin-right: -45px;
+    }
 }
