@@ -28,7 +28,7 @@ export default function Review({stars, text, name, position, avatar}:Props): JSX
                     </div>
                     <p className={styles.text}>{text}</p>
                     <div className={styles.author}>
-                        <img src={avatar}/>
+                        <img src={avatar} className={styles.avatar}/>
                         <div className={styles.aboutAuthor}>
                         <span className={styles.name}>{name}</span>
                         <span className={styles.position}>{position}</span>

@@ -43,3 +43,9 @@
   font-weight: 400;
   color: #f5e2c3;
 }
+
+.avatar{
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+}
